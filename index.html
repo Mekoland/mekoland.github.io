@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> The Magic Train</title>
+<style>
+body {
+padding: 0;
+margin: 0;
+}
+div {
+width: 100%;
+height: 100%;
+
+}
+p.one {
+font-family: "Arial Narrow", Arial, sans-serif;
+  position:absolute;
+    left:40%;
+    top:17%;
+font-size: 240%;
+	color:#d9d9d9;
+}
+p.two {
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position:absolute;
+    left:38%;
+font-weight: bold;
+	font-size: 330%;
+    top:20%;
+	color:#ffffff;
+}
+p.three {
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position:absolute;
+    left:22%;
+font-weight: bold;
+	font-size: 360%;
+    top:23.6%;
+	color:#ffffff;
+}
+
+p.zone2 {
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position:absolute;
+    left:45%;
+font-weight: bold;
+	font-size: 340%;
+    top:24%;
+	color:#ffffff;
+}
+p.zone {
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position:absolute;
+    left:34%;
+font-weight: bold;
+	font-size: 340%;
+    top:24%;
+	color:#ffffff;
+}
+img.picture1 {
+  position:absolute;
+    left:-20%;
+	top:0%;
+font-size: 340%;
+}
+img.picture2 {
+  position:absolute;
+    left:34%;
+	top:-20%;
+font-size: 340%;
+}
+img.picture3 {
+  position:absolute;
+    left:34%;
+font-size: 340%;
+top:100%
+}
+img.picture4 {
+  position:absolute;
+    left:70%;
+font-size: 340%;
+	top:-20%;
+}
+img.picture5 {
+  position:absolute;
+    left:0%;
+font-size: 340%;
+top:100%
+}
+img.picture6 {
+  position:absolute;
+    left:70%;
+font-size: 340%;
+top:100%
+}
+
+html {
+  background:  url(https://image.ibb.co/i8zhU5/ezgif_com_video_to_gif.gif) no-repeat center center fixed; 
+  background-size:80% 72%;
+}
+</style>
+</head>
+<body>
+<div>
+<img class = "picture1" src="http://howtogrowweed420.com/blog/wp-content/uploads/2013/11/cannabis.jpg" alt="Mountain View" style="width:304px;height:180px;">
+<img class = "picture2" src="https://media.giphy.com/media/XM8N9c1Ay1Hz2/giphy.gif" alt="View" style="width:304px;height:180px;">
+<img class = "picture3" src="https://media.tenor.com/images/3625c4938a51e185c99ab746f56889bc/tenor.gif" alt="View" style="width:304px;height:180px;">
+<img class = "picture4" src="https://media.giphy.com/media/JU9DgNhLE5a2A/giphy.gif" alt="View" style="width:304px;height:180px;">
+<img class = "picture5" onclick="myFunction()" src="https://media.giphy.com/media/v6HfgqoLd7HLW/giphy.gif" alt="View" style="width:304px;height:180px;">
+<img class = "picture6" onclick="ChangeTime()" src="http://media2.giphy.com/media/dA6kTMB2KG6qc/giphy.gif" alt="View" style="width:304px;height:180px;">
+
+	<p onclick="myFunction()" class="one">TriMet Ticket</p>
+	<p class="two">EXPIRES</p>
+	<p class = "three" id="three"></p><p class = "zone" id ="zone" onclick="ChangeTime()">PM</p><p class = "zone2"> Sep 1 2017</p>
+	
+	</div>
+	<script>
+	var number = 0;
+var calc = 1;
+
+
+function myFunction() {
+if(number <= 9) {
+document.getElementById("three").style.left="18%";
+number = number + 1;
+if(number>11){
+number = 1;
+document.getElementById("three").style.left="22%";
+}
+}
+else
+{
+document.getElementById("three").style.left="22%";
+	number = number + 1;
+}
+	document.getElementById("three").innerHTML = number + ":58";
+}
+function ChangeTime() {
+if(calc==1){
+document.getElementById("zone").innerHTML = "PM";
+calc = 0;
+}
+else
+{
+document.getElementById("zone").innerHTML = "AM";
+calc = 1;
+}
+}
+
+	</script>
+
+
+
+</body>
+</html>
